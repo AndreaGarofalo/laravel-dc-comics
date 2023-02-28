@@ -1,0 +1,20 @@
+.merchandise {
+    height: 10rem;
+    background-color: $blue;
+    .container {
+        height: 100%;
+        @include center("both");
+        justify-content: space-around;
+        a {
+            display: flex;
+            @include center("both");
+            h2 {
+                color: white;
+                font-size: 18px;
+            }
+            img {
+                height: 50px;
+            }
+        }
+    }
+}

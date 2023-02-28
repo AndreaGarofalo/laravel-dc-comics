@@ -1,0 +1,18 @@
+@mixin vertical-center-between-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin center($axis) {
+  display: flex;
+
+  @if $axis == "main" {
+    justify-content: center;
+  } @else if $axis == "cross" {
+    align-items: center;
+  } @else {
+    justify-content: center;
+    align-items: center;
+  }
+}
