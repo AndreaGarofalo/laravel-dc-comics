@@ -80,7 +80,7 @@
             </div>
         </form>
     </div>
-    <a href="{{ route('comics.index') }}" class="btn-add btn btn-small btn-primary">
+    <a href="{{ route('comics.index') }}" class="btn-add mb-5 btn btn-small btn-primary">
         <div class="btn-text">
             <p class="m-0">Go back</p>
         </div>
