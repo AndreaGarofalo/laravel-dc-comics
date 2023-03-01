@@ -21,8 +21,8 @@
                 </div>
                 <div class="col-6">
                     <div class="mb-3">
-                        <label for="thumb" class="form-label">Cover:</label>
-                        <input type="url" class="form-control" id="thumb" placeholder="Cover"
+                        <label for="thumb" class="form-label">Thumb:</label>
+                        <input type="url" class="form-control" id="thumb" placeholder="Thumb"
                             name="thumb" required>
                     </div>
                 </div>
