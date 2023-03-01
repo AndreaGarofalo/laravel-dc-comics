@@ -16,7 +16,7 @@
     @include('includes.jumbotron')
 </header>
     @yield('content')
-    
+    @include('includes.merch')
     @include('includes.footer')
 </body>
 </html>

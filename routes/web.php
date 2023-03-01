@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ComicController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,18 +15,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/characters', function () {
     return view('characters');
 })->name('characters');
 
-Route::get('/comics', function () {
-    $series = config('comics');
-    return view('comics', compact('series'));
-})->name('comics');
+// Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
+// Route::get('/comics/{id}', [ComicController::class, 'show'])->name('comics.show');
+// Route::get('/comics/create', [ComicController::class, 'create'])->name('comics.create');
+// Route::post('/comics', [ComicController::class, 'store'])->name('comics.store');
+// Route::get('/comics/edit', [ComicController::class, 'edit'])->name('comics.edit');
+// Route::put('/comics/{id}', [ComicController::class, 'update'])->name('comics.update');
+// Route::delete('/comics/{id}', [ComicController::class, 'destroy'])->name('comics.destroy');
+
+Route::resource('comics', ComicController::class);
+
+// Route::get('/comics', function () {
+//     $series = config('comics');
+//     return view('comics', compact('series'));
+// })->name('comics');
 
 Route::get('/movies', function () {
     return view('movies');

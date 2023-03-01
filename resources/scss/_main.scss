@@ -1,6 +1,6 @@
 main {
     background-color: $black;
-    height: 600px;
+    height: 650px;
     .container {
         .cards-row {
             display: flex;
@@ -16,6 +16,9 @@ main {
                     width: 200px;
                     padding: 10px;
                     overflow: hidden;
+                    img {
+                        width: 100%;
+                    }
                 }
                 figcaption {
                     padding: 10px;
