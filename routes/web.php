@@ -31,11 +31,6 @@ Route::get('/characters', function () {
 
 Route::resource('comics', ComicController::class);
 
-// Route::get('/comics', function () {
-//     $series = config('comics');
-//     return view('comics', compact('series'));
-// })->name('comics');
-
 Route::get('/movies', function () {
     return view('movies');
 })->name('movies');
