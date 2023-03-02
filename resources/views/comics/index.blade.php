@@ -22,6 +22,10 @@
         <div class="add-comic d-flex justify-content-center">
         <a href="{{ route('comics.create') }}" class="btn-add mb-5 btn btn-small btn-primary">Forge a new comic</a>
     </div>
+      </div>
+        <div class="edit-comic d-flex justify-content-center">
+        <a href="{{ route('comics.edit', $comic->id) }}" class="btn-add mb-5 btn btn-small btn-primary">Edit comic</a>
     </div>
-  </main>
+  </div>
+</main>
 @endsection

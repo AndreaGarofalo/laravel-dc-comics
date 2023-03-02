@@ -15,12 +15,13 @@
             <div class="add-comic d-flex justify-content-center">
                 <a href="{{ route('comics.index') }}" class="btn-add my-4 btn btn-small btn-primary">
                     <div class="btn-text">
-                        <span>Torna indietro</span>
-                        <div class="btn-cloud"></div>
+                        <span>Go back</span>
                     </div>
-                    <div class="btn-border"></div>
-                    <div class="btn-bg"></div>
                 </a>
+            </div>
+                <div class="edit-comic d-flex justify-content-center">
+                    <a href="{{ route('comics.edit', $comic->id) }}" class="btn-add mb-5 btn btn-small btn-primary">Edit comic</a>
+                </div>
             </div>
         </div>
     </div>
