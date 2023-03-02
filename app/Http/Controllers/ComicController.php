@@ -33,6 +33,7 @@ class ComicController extends Controller
         $comic = new Comic();
         $comic->fill($data);
         $comic->save();
+        
     }
 
     /**
