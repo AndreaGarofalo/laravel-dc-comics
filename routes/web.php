@@ -27,7 +27,7 @@ Route::get('/characters', function () {
 // Route::post('/comics', [ComicController::class, 'store'])->name('comics.store');
 // Route::get('/comics/edit', [ComicController::class, 'edit'])->name('comics.edit');
 // Route::put('/comics/{id}', [ComicController::class, 'update'])->name('comics.update');
-// Route::delete('/comics/{id}', [ComicController::class, 'destroy'])->name('comics.destroy');
+// Route::delete('/comics{comic}', [ComicController::class, 'destroy'])->name('comics.destroy');
 
 Route::resource('comics', ComicController::class);
 
